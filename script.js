@@ -14,8 +14,17 @@ window.addEventListener("DOMContentLoaded", function(event){
             days
         }
     }
-    answer = clock("January 31 2021 23:59:59 GMT+0200")
+    function changeClock(){
+        meteor = data.Showers[1]
+        let answer = clock(meteor.Date)
+        document.getElementById("Days").innerHTML = answer.days;
+        document.getElementById("Hours").innerHTML = answer.hours;
+        document.getElementById("Minutes").innerHTML = answer.minutes;
+        document.getElementById("Seconds").innerHTML = answer.seconds;
+        document.getElementById("Name").innerHTML = meteor.Name;
+        document.getElementById("POO").innerHTML = meteor.POO;
+        document.getElementById("Mph").innerHTML = answer.seconds;
 
-    
-    setInterval(alert(answer.seconds),10);
+    }
+    setInterval(changeClock,100);
 });
