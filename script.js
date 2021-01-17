@@ -30,13 +30,15 @@ window.addEventListener("DOMContentLoaded", function(event){
             days
         }
     }
+    var meteor = data.Showers[first]
     function changeClock(){
-        meteor = data.Showers[first]
         let answer = clock(meteor["Date"])
         document.getElementById("Days").innerHTML = answer.days;
         document.getElementById("Hours").innerHTML = answer.hours;
         document.getElementById("Minutes").innerHTML = answer.minutes;
-        document.getElementById("Seconds").innerHTML = answer.seconds;
+        document.getElementById("Seconds").innerHTML = answer.seconds;   
+    }
+    function fillInformation(){
         document.getElementById("Name").innerHTML = meteor["Name"];
         document.getElementById("POO").innerHTML = meteor["POO"];
         document.getElementById("Mph").innerHTML = meteor["Mph"];
@@ -44,5 +46,6 @@ window.addEventListener("DOMContentLoaded", function(event){
         document.getElementById("Comet").innerHTML = meteor["Comet"];
         document.getElementById("Date").innerHTML = meteor["Date"];
     }
+    fillInformation()
     setInterval(changeClock,100);
 });

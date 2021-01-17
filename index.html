@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="list.js"></script>
-    <script src="script.js"></script>
-</head>
-<body>
-    <h1>Meteor Shower Look-up</h1>
-    <h2>Time until next meteor shower</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Days</th>
-                <th>Hours</th>
-                <th>Minutes</th>
-                <th>Seconds</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td id = "Days"></td>
-                <td id = "Hours"></td>
-                <td id = "Minutes"></td>
-                <td id = "Seconds"></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3 id="Name"></h3>
-    <h3 id="POO"></h3>
-    <h3 id="Date"></h3>
-    <h3 id="Comet"></h3>
-    <h3 id="Viewing"></h3>
-    <h3 id="Mph"></h3>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="list.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+    <h1>Meteor Shower Forecast</h1>
+    <hr>
+    <hr>
+    <div id="timer-container">days
+    <h1 id="Days" class="Timer"></h1>hours
+    <h1 id="Hours" class="Timer"></h1>minutes
+    <h1 id="Minutes" class="Timer"></h1>seconds
+    <h1 id="Seconds" class="Timer"></h1>
+    </div>
+    <hr>
+    <div id="description">
+    <h4>Name: <span id="Name"></span></h4>
+    <h4>Exact Date: <span id="Date"></span></h4>
+    <h4>Viewing: <span id="Viewing"></span></h4>
+    <h4>Point of interest: <span id="POO"></span></h4>
+    <h4>How Many Comets Per Hour: <span id="Mph"></span></h4>
+    <h4>Comet: <span id="Comet"></span></h4>
+    </div>
+    </body>
 </html>
