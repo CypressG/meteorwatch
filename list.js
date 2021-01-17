@@ -53,16 +53,7 @@ const data = {
             "Date":"October 8 2021 23:59:59 GMT+0200",
             "Mph":6,
             "Comet": "Giacobini-Zinner",
-        },        
-        {
-            "ID":7,
-            "Name":"Quadrantid",
-            "Viewing":"Predawn",
-            "POO":"N",
-            "Date":"January 18 2021 23:59:59 GMT+0200",
-            "Mph":25,
-            "Comet": null,
-        },        
+        },         
         {
             "ID":8,
             "Name":"Orionid",
